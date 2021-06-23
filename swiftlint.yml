@@ -1,0 +1,27 @@
+disabled_rules:
+ - function_body_length
+ - trailing_whitespace # 空白の改行を許可するため除外
+ - nesting
+ - force_cast
+
+# デフォルト無効のルールのうち、有効にするもの。
+opt_in_rules:
+ - attributes
+ - closure_end_indentation
+ - closure_spacing
+ - conditional_returns_on_newline
+ - empty_count
+ - explicit_init
+ - explicit_type_interface
+ - fatal_error_message
+# ライブラリを対象から外す
+excluded:
+ - Pods/
+ - Podfile
+ - Podfile.lock
+
+line_length:
+  warning: 300
+  error: 500
+
+cyclomatic_complexity: 25
